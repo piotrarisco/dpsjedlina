@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DPS Jedlina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/script/jquery.fullpage.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+ 
+
+
+
+  <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="styles/main.css"  type="text/css"/>
+
+  <style>
+@media (max-width: 768px) {
+  #page-content-wrapper {
+    margin-top: 45px;
+  }
+  
+  #sidebar-wrapper {
+    display: none;
+  }
+  
+  #content {    
+  margin-left: 0px;
+  }
+  
+  .pz-home-text {
+      left:50%;
+      
+  }
+  
+  .pz-container {
+
+    margin:10px;
+}
+}
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;    
+  }
+
+  #page-content-wrapper {
+    margin-left: 250px;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {				
+    .twoColumns{
+        -webkit-column-gap: 0px;
+           -moz-column-gap: 0px;
+                column-gap: 0px;
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }		
+}
+
+@media (max-width:1000px){
+    .btn2 {
+        width:150px;
+    }
+}
+
+      
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Sidebar -->
+  <div class="pz-sidenav" id="sidebar-wrapper">
+      
+      <div class="sidebar-heading text-center" style="background-color:white;"><img class="img-fluid" style="max-height:170px" src="logo.jpg"></div>
+    <div class="list-group list-group-flush ">
+        <div class="link-background text-center">
+            <a href="index.html" class="btn middle">O DOMU</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="aktualnosci.html" class="btn middle">AKTUALNOŚCI</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="uslugi_bytowe.html" class="btn middle">USŁUGI BYTOWE</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="uslugi_opiekuncze.html" class="btn middle">USŁUGI OPIEKUŃCZE</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="uslugi_wspierajace.html" class="btn middle">USŁUGI WSPIERAJĄCE</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="historia_domu.html" class="btn middle">HISTORIA DOMU</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="kontakt_i_dojazd.html" class="btn middle">KONTAKT I DOJAZD</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="wademekum.html" class="btn middle">WADEMEKUM</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="galeria_zdjec.html" class="btn middle">GALERIA ZDJĘĆ</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="przetargi.html" class="btn middle">PRZETARGI</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="praca.html" class="btn middle">PRACA</a>
+        </div>
+<!--        <a href="index.html" class="btn">STRONA GŁÓWNA</a>-->
+        
+      
+      
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom d-md-none">
+      <a class="navbar-brand">DPS w Lubzinie</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="index.html">O DOMU</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="aktualnosci.html">AKTUALNOŚCI</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_bytowe.html">USŁUGI BYTOWE</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_opiekuncze.html">USŁUGI OPIEKUŃCZE</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_wspierajace.html">USŁUGI WSPIERAJĄCE</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="historia_domu.html">HISTORIA DOMU</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="kontakt_i_dojazd.html">KONTAKT I DOJAZD</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="wademekum.html">WADEMEKUM</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="galeria_zdjec.html">GALERIA ZDJĘĆ</a>
+          </li>
+             <li class="nav-item btn from-left">
+            <a class="nav-link" href="przetargi.html">PRZETARGI</a>
+          </li>
+             <li class="nav-item btn from-left">
+            <a class="nav-link" href="praca.html">PRACA</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  
+  
+  <!-- Page Content -->
+  <div id="content">
+      <div>
+        <img class="img-fluid" src="main_photo.jpg" alt="dom"/>
+      </div>
+      
+    
+    <div class="row">
+            <div class="col-md-12 col-lg-6">
+            
+            
+            
+            
+            <div class="row">
+                
+                <div class="pz-section div-reh-4">
+                    <h2>USŁUGI BYTOWE</h2>
+                    <b>Dom Pomocy Społecznej "JEDLINA"</b> w Mieni realizuje potrzeby mieszkańców zgodnie ze standardem w odpowiednio wyposażonych do tego celu pomieszczeniach. Dom spełnia wszystkie wymogi wynikające z przepisów bezpieczeństwa przeciwpożarowego i sanitarnego. Bazę mieszkalną Domu stanowią 3 budynki – najstarszy budynek główny, który został wybudowany w 1925 r. oraz dwa nowe budynki oddane do użytku w 1995 i 1996r.
+
+Obecnie w budynkach DPS znajduje się: 10 - pokoi jednoosobowych, 31 - dwuosobowych, 12 - trzyosobowych.
+
+  <br><br>
+
+<b>Budynek Główny</b> jest zamieszany przez 32 osoby w 14 pokojach. Oprócz pokoi mieszkalnych w budynku tym znajduje się: kuchnia, kotłownia olejowa, pralnia, stołówka dla mieszkańców tego budynku, pracownie terapii zajęciowej, rehabilitacja medyczna, sala sportowa, kawiarnia, sala muzyczna ze sceną, gabinet pielęgniarsko-lekarski oraz kaplica.
+
+<br><br>
+<b>Nowe Budynki I</b> oraz <b>II</b> zamieszkuje po 38 osób. Każdy z budynków składa się 4 „gniazd rodzinnych”. W gnieździe mieszka ok. 9-10 osób. Oprócz pokoi mieszkalnych mają do dyspozycji kuchenkę z podstawowym sprzętem AGD, jadalnię, salon i oranżerię. Mieszkańcy sami dbają o porządek w pokojach, sami przynoszą posiłki z kuchni centralnej, wspólnie je spożywają i po nich sprzątają.
+
+<br><br>
+
+<b>Dom</b> posiada do dyspozycji własny teren rekreacyjny z kompleksem dziennym do bezpośredniego odpoczynku i relaksu oraz znajduje się w otoczeniu lasów Leśnictwa Mienia blisko Rezerwatu przyrody "Jedlina".
+
+   <br><br>
+
+
+<b>Wyżywienie</b> <br>
+
+Dom zapewnia 4 posiłki w ciągu doby: śniadanie 730 – 830, obiad 1315 - 1500, posiłek dodatkowy 1600 -1700, kolacja 1800 - 1900. Ponadto mieszkańcy bez ograniczeń mają całodobowy dostęp do napoi i podstawowych produktów żywnościowych.
+                
+            </div>
+                
+            
+            
+                
+            </div>
+           
+            
+        </div>
+   
+      <div class="col-md-12 col-lg-6 ">
+          <div class="row">
+                
+                <div class="pz-section div-reh-4"  style="width:100%">
+            
+            <div class="col-sm-12 col-md col-lg section d-flex" style="min-height:200px">		    		
+                                            <div  class="row my-auto w-100">
+                                                <div class="col-sm-4 col-md-4 col-lg-4 d-flex">
+                                                    <a class="my-auto mx-auto" href="/firmy/b_m__fabryka_mebli_biurowych">
+																													<img class="img-fluid mx-auto d-block pl-3" src="zalacznik_1971_m.jpg" style="min-height:100px" alt="Logo firmy" />
+														                                                    </a>
+                                                </div>
+                                                    <div class="col-sm-8 col-md-8 col-lg-8 d-flex p-0">
+                                                        <div class="my-auto" >
+                                                            <h4> Andrzej Przybysz medalistą olimpijskim
+ </h4></div>
+                                                            <div class="content-font">
+                                                                <div class="content-font">
+                                                                                                                                        
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+            </div>		    		
+        </div>
+              <div class="pz-section div-reh-4 mt-4" style="width:100%">
+            
+            <div class="col-sm-12 col-md col-lg section d-flex" style="min-height:200px">		    		
+                                            <div  class="row my-auto w-100">
+                                                <div class="col-sm-4 col-md-4 col-lg-4 d-flex">
+                                                    <a class="my-auto mx-auto" href="/firmy/b_m__fabryka_mebli_biurowych">
+																													<img class="img-fluid mx-auto d-block pl-3" src="zalacznik_1824_m.jpg" style="min-height:100px" alt="Logo firmy" />
+														                                                    </a>
+                                                </div>
+                                                    <div class="col-sm-8 col-md-8 col-lg-8 d-flex p-0">
+                                                        <div class="my-auto">
+                                                            <h4> Robert Bindas - osobowość artystyczna
+
+ </h4></div>
+                                                            <div class="content-font">
+                                                                <div class="content-font">
+                                                                                                                                        
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+            </div>		    		
+        </div> 
+           
+            
+        </div></div></div>
+   
+      
+      <div class="row" >
+			<div class="text-center col-12 mt-3 mb-3">
+				<div>
+					Created by <a  href="http://www.arisco.pl/" target="_blank" title="Tworzenie stron internetowych">ARISCO</a>
+				</div>
+				<div>
+					Copyright &#169; 2020 DPS Jedlina. Wszelkie prawa zastrzeżone
+				</div>
+			</div>
+                </div>
+      </div>
+
+      
+        <br> 
+      
+
+
+<script>
+$('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});
+</script>
+  
+</body>
+</html>
+
