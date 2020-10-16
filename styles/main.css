@@ -117,6 +117,11 @@ div:last-child {margin-bottom: 0;}
     border: solid 0px white;;
 }
 
+.dropdown-container {
+    display:none;
+    
+}
+
 .dropdown-container a {
     color:white;
     
